@@ -1,30 +1,95 @@
-@media only screen and (min-width:768px){
+/* ===========================
+   WDD 131 - Temple Album
+   Large Screen Styles
+=========================== */
 
-#menu{
+@media only screen and (min-width: 768px) {
 
-display:none;
+    /* ===========================
+       Header
+    =========================== */
 
-}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
 
-nav{
+    header h1 {
+        margin: 0;
+    }
 
-flex-direction:row;
+    /* ===========================
+       Hide Hamburger Button
+    =========================== */
 
-justify-content:center;
+    #menu {
+        display: none;
+    }
 
-}
+    /* ===========================
+       Navigation
+    =========================== */
 
-nav a{
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0;
+    }
 
-display:block;
+    nav a {
+        display: block;
+        padding: 0.75rem 1.25rem;
+        border-radius: 6px;
+    }
 
-}
+    nav a:hover {
+        background-color: var(--accent-color);
+        color: #000;
+    }
 
-.gallery{
+    /* ===========================
+       Main Content
+    =========================== */
 
-grid-template-columns:
-repeat(3,1fr);
+    main {
+        padding: 2rem;
+    }
 
-}
+    /* ===========================
+       Responsive Gallery
+    =========================== */
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    figure img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    /* ===========================
+       Figure Hover Effect
+    =========================== */
+
+    figure:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ===========================
+       Footer
+    =========================== */
+
+    footer {
+        font-size: 1rem;
+    }
 
 }
