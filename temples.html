@@ -1,52 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album | WDD 131 - Dynamic Web Fundamentals</title>
+
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Temple Album created by Jose Villanueva featuring a responsive image gallery with HTML, CSS, and JavaScript.">
+
+    <meta name="author" content="Jose Villanueva">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+
+</head>
+
+<body>
+
 <header>
 
-<h1>Temple Album</h1>
+    <h1>Temple Album</h1>
 
-<button id="menu">&#9776;</button>
+    <button id="menu" aria-label="Open Navigation Menu">
+        ☰
+    </button>
 
-<nav>
+    <nav>
 
-<a href="#">Home</a>
-<a href="#">Old</a>
-<a href="#">New</a>
-<a href="#">Large</a>
-<a href="#">Small</a>
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
 
-</nav>
+    </nav>
 
 </header>
+
 <main>
 
-<h2>Temple Album</h2>
+    <h2>Temple Gallery</h2>
 
-<div class="gallery">
+    <div class="gallery">
 
-<figure>
+        <figure>
+            <img src="images/temple1.webp" alt="Salt Lake Temple" loading="lazy">
+            <figcaption>Salt Lake Temple</figcaption>
+        </figure>
 
-<img src="images/temple1.webp"
-alt="Temple 1">
+        <figure>
+            <img src="images/temple2.webp" alt="Rome Italy Temple" loading="lazy">
+            <figcaption>Rome Italy Temple</figcaption>
+        </figure>
 
-<figcaption>Temple Name</figcaption>
+        <figure>
+            <img src="images/temple3.webp" alt="Washington D.C. Temple" loading="lazy">
+            <figcaption>Washington D.C. Temple</figcaption>
+        </figure>
 
-</figure>
+        <figure>
+            <img src="images/temple4.webp" alt="Mexico City Temple" loading="lazy">
+            <figcaption>Mexico City Temple</figcaption>
+        </figure>
 
-...
-(9 figuras)
+        <figure>
+            <img src="images/temple5.webp" alt="Provo City Center Temple" loading="lazy">
+            <figcaption>Provo City Center Temple</figcaption>
+        </figure>
 
-</div>
+        <figure>
+            <img src="images/temple6.webp" alt="Laie Hawaii Temple" loading="lazy">
+            <figcaption>Laie Hawaii Temple</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple7.webp" alt="Tokyo Japan Temple" loading="lazy">
+            <figcaption>Tokyo Japan Temple</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple8.webp" alt="Bogotá Colombia Temple" loading="lazy">
+            <figcaption>Bogotá Colombia Temple</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/temple9.webp" alt="Cochabamba Bolivia Temple" loading="lazy">
+            <figcaption>Cochabamba Bolivia Temple</figcaption>
+        </figure>
+
+    </div>
 
 </main>
+
 <footer>
 
-<p>
+    <p>
+        &copy;
+        <span id="currentyear"></span>
+        Jose Villanueva | Bolivia
+    </p>
 
-©
-<span id="currentyear"></span>
-
-Jose Villanueva | Bolivia
-
-</p>
-
-<p id="lastModified"></p>
+    <p id="lastModified"></p>
 
 </footer>
+
+</body>
+</html>
