@@ -1,0 +1,117 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bolivia | WDD 131 - Dynamic Web Fundamentals</title>
+
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. A responsive country page about Bolivia created by Jose Villanueva.">
+
+    <meta name="author" content="Jose Villanueva">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Bolivia</h1>
+</header>
+
+<main>
+
+    <!-- Hero Image -->
+    <picture>
+
+        <source
+            media="(min-width: 768px)"
+            srcset="images/bolivia-large.webp">
+
+        <img
+            src="images/bolivia-small.webp"
+            alt="Beautiful landscape of Bolivia"
+            width="1200"
+            height="700">
+
+    </picture>
+
+    <!-- Information Section -->
+    <section class="card info">
+
+        <h2>Data</h2>
+
+        <ul>
+
+            <li><strong>Capital:</strong> Sucre</li>
+
+            <li><strong>Largest City:</strong> Santa Cruz de la Sierra</li>
+
+            <li><strong>Population:</strong> 12 Million</li>
+
+            <li><strong>Languages:</strong> Spanish, Quechua, Aymara, Guaraní</li>
+
+            <li><strong>Currency:</strong> Boliviano (BOB)</li>
+
+            <li><strong>Time Zone:</strong> UTC -4</li>
+
+        </ul>
+
+    </section>
+
+    <!-- Weather Section -->
+    <section class="card weather">
+
+        <h2>Weather</h2>
+
+        <!-- Mobile Weather Icon -->
+        <img
+            class="weather-icon"
+            src="images/weather.svg"
+            alt="Weather Icon"
+            width="64"
+            height="64">
+
+        <ul>
+
+            <li><strong>Temperature:</strong> <span id="temperature">8</span> °C</li>
+
+            <li><strong>Conditions:</strong> Partly Cloudy</li>
+
+            <li><strong>Wind:</strong> <span id="windspeed">10</span> km/h</li>
+
+            <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy;
+        <span id="currentyear"></span>
+        Jose Villanueva | Bolivia
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
+```
