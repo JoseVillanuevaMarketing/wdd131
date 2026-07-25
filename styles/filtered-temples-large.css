@@ -1,0 +1,90 @@
+@media only screen and (min-width: 768px) {
+
+    /* ---------- Header ---------- */
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1rem 2rem;
+    }
+
+    header h1 {
+
+        margin: 0;
+    }
+
+    /* ---------- Hide Hamburger ---------- */
+
+    #menu {
+
+        display: none;
+    }
+
+    /* ---------- Navigation ---------- */
+
+    .navigation {
+
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .navigation a {
+
+        display: block;
+        padding: .75rem 1rem;
+        border-radius: 5px;
+        transition: background-color .3s ease,
+                    color .3s ease;
+    }
+
+    .navigation a:hover {
+
+        background-color: var(--accent-color);
+        color: black;
+    }
+
+    /* ---------- Main ---------- */
+
+    main {
+
+        padding: 2rem;
+    }
+
+    /* ---------- Temple Gallery ---------- */
+
+    .gallery {
+
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    /* ---------- Temple Cards ---------- */
+
+    .gallery section {
+
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+    }
+
+    .gallery img {
+
+        transition: transform .3s ease;
+    }
+
+    .gallery section:hover img {
+
+        transform: scale(1.05);
+    }
+
+    .gallery p {
+
+        padding: .4rem 1rem;
+    }
+
+}
