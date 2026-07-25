@@ -55,22 +55,25 @@ const temples = [
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 41010,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-52983.jpg"
-  },
-  {
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-1305417.jpg"
+},
+{
     templeName: "Salt Lake",
     location: "Salt Lake City, Utah",
     dedicated: "1893, April, 6",
     area: 253000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-37763.jpg"
-  },
-  {
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-utah/400x250/salt-lake-temple-37762.jpg"
+},
+{
     templeName: "Fortaleza Brazil",
     location: "Fortaleza, Brazil",
     dedicated: "2019, June, 2",
     area: 36000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/fortaleza-brazil-temple/fortaleza-brazil-temple-49246.jpg"
-  }
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/fortaleza-brazil/400x250/fortaleza-brazil-temple-5095067.jpg"
+},
 ];
 
 // ---------- DOM References ----------
