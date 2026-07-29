@@ -1,0 +1,269 @@
+/* ---------- Google Fonts ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+/* ---------- CSS Variables ---------- */
+
+:root {
+
+    --primary: #19222D;
+    --secondary: #B6AB97;
+    --background: #F4F4F4;
+    --white: #FFFFFF;
+    --text: #333333;
+
+    --shadow: 0 6px 15px rgba(0,0,0,.15);
+
+    --max-width: 1100px;
+
+}
+
+/* ---------- Reset ---------- */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* ---------- Body ---------- */
+
+body {
+
+    font-family: "Roboto", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+
+}
+
+/* ---------- Header ---------- */
+
+header {
+
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 2.5rem 1rem;
+
+}
+
+header h1 {
+
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+
+}
+
+header p {
+
+    font-size: 1.1rem;
+
+}
+
+/* ---------- Main ---------- */
+
+main {
+
+    max-width: var(--max-width);
+
+    margin: 2rem auto;
+
+    padding: 1rem;
+
+}
+
+/* ---------- Sections ---------- */
+
+section {
+
+    background: var(--white);
+
+    margin-bottom: 2rem;
+
+    padding: 2rem;
+
+    border-radius: 12px;
+
+    box-shadow: var(--shadow);
+
+}
+
+section h2 {
+
+    font-family: "Poppins", sans-serif;
+
+    color: var(--primary);
+
+    margin-bottom: 1rem;
+
+    border-bottom: 3px solid var(--secondary);
+
+    padding-bottom: .5rem;
+
+}
+
+section p {
+
+    margin-bottom: 1rem;
+
+}
+
+section ul {
+
+    padding-left: 1.5rem;
+
+}
+
+section li {
+
+    margin-bottom: .6rem;
+
+}
+
+/* ---------- Color Cards ---------- */
+
+.colors {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+
+    gap: 1.5rem;
+
+    margin-top: 1rem;
+
+}
+
+.color {
+
+    border-radius: 10px;
+
+    padding: 1.5rem;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    box-shadow: var(--shadow);
+
+}
+
+.navy {
+
+    background: #19222D;
+
+    color: white;
+
+}
+
+.beige {
+
+    background: #B6AB97;
+
+    color: black;
+
+}
+
+.white {
+
+    background: white;
+
+    border: 2px solid #ddd;
+
+}
+
+.gray {
+
+    background: #F4F4F4;
+
+}
+
+/* ---------- Typography ---------- */
+
+.heading-font {
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.5rem;
+
+    color: var(--primary);
+
+    font-weight: 700;
+
+}
+
+.body-font {
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 1.2rem;
+
+    font-weight: 500;
+
+}
+
+/* ---------- Wireframes ---------- */
+
+pre {
+
+    background: #ececec;
+
+    padding: 1.5rem;
+
+    overflow-x: auto;
+
+    border-radius: 8px;
+
+    font-family: monospace;
+
+    font-size: .95rem;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+
+    background: var(--primary);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+}
+
+footer p {
+
+    margin: .4rem 0;
+
+}
+
+#lastModified {
+
+    color: var(--secondary);
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media (min-width: 768px) {
+
+    header h1 {
+
+        font-size: 3rem;
+
+    }
+
+    main {
+
+        padding: 2rem;
+
+    }
+
+}
