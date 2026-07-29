@@ -55,24 +55,21 @@ const temples = [
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 41010,
-    imageUrl:
-    "images/rome.webp"
+    imageUrl: "https://josevillanuevamarketing.github.io/wdd131/images/rome.webp"
 },
 {
     templeName: "Salt Lake",
     location: "Salt Lake City, Utah",
     dedicated: "1893, April, 6",
     area: 253000,
-    imageUrl:
-    "images/saltlake.webp"
+    imageUrl: "https://josevillanuevamarketing.github.io/wdd131/images/saltlake.webp"
 },
 {
     templeName: "Fortaleza Brazil",
     location: "Fortaleza, Brazil",
     dedicated: "2019, June, 2",
     area: 36000,
-    imageUrl:
-    "images/fortaleza.webp"
+    imageUrl: "https://josevillanuevamarketing.github.io/wdd131/images/fortaleza.webp"
 },
 ];
 
