@@ -81,9 +81,14 @@
     /* ---------- Services ---------- */
 
     .cards {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
+
+    grid-template-columns:repeat(3, 1fr);
+    gap:2rem;
+
+    max-width:1200px;
+    margin:auto;
+
+}
     .card img {
 
     height:250px;
@@ -115,6 +120,36 @@
         max-width: 700px;
         margin: 1rem auto 2rem;
     }
+    /* ---------- Contact Page ---------- */
+
+.contact-hero {
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:4rem;
+
+    padding:4rem 2rem;
+
+}
+
+
+.contact-image img {
+
+    max-width:550px;
+
+}
+
+
+.contact-form {
+
+    max-width:800px;
+
+    margin:4rem auto;
+
+}
 
     /* ---------- Footer ---------- */
 
