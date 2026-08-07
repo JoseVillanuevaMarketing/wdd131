@@ -1,6 +1,7 @@
 // ======================================
 // Sky Mark Digital
 // project.js
+// Author: Jose Villanueva
 // ======================================
 
 // ---------- Footer ----------
@@ -8,10 +9,17 @@
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 
-currentYear.textContent = new Date().getFullYear();
-lastModified.textContent = `Last Modified: ${document.lastModified}`;
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
 
-// ---------- Mobile Menu ----------
+if (lastModified) {
+    lastModified.textContent = `Last Modified: ${document.lastModified}`;
+}
+
+// ======================================
+// Mobile Navigation
+// ======================================
 
 const menuButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
@@ -28,7 +36,7 @@ if (menuButton && navigation) {
 }
 
 // ======================================
-// Featured Services
+// Services Data
 // ======================================
 
 const services = [
@@ -39,54 +47,24 @@ const services = [
     },
 
     {
+        title: "Facebook & Instagram Ads",
+        category: "Advertising"
+    },
+
+    {
         title: "Website Design",
         category: "Web Design"
     },
 
     {
-        title: "Graphic Design",
+        title: "Brand Identity",
         category: "Design"
-    },
-
-    {
-        title: "Facebook Ads",
-        category: "Advertising"
     }
 
 ];
 
-// ---------- Save Visit Counter ----------
-
-let visits = Number(localStorage.getItem("visits")) || 0;
-
-visits++;
-
-localStorage.setItem("visits", visits);
-
 // ======================================
-// Optional Visit Message
-// ======================================
-
-const visitMessage = document.querySelector("#visit-message");
-
-if (visitMessage) {
-
-    if (visits === 1) {
-
-        visitMessage.textContent =
-        `Welcome! This is your first visit to Sky Mark Digital.`;
-
-    } else {
-
-        visitMessage.textContent =
-        `Welcome back! You have visited this website ${visits} times.`;
-
-    }
-
-}
-
-// ======================================
-// Display Services
+// Display Services (Home)
 // ======================================
 
 const servicesContainer = document.querySelector("#services-list");
@@ -99,50 +77,95 @@ function displayServices(serviceArray) {
 
     serviceArray.forEach(service => {
 
-        const article = document.createElement("article");
+        const card = document.createElement("article");
 
-        article.classList.add("service-card");
+        card.classList.add("service-card");
 
-        article.innerHTML = `
-
+        card.innerHTML = `
             <h3>${service.title}</h3>
-
             <p>${service.category}</p>
-
         `;
 
-        servicesContainer.appendChild(article);
+        servicesContainer.appendChild(card);
 
     });
 
 }
 
-displayServices(services);
+if (servicesContainer) {
+    displayServices(services);
+}
 
 // ======================================
-// Filter Example
+// Example Filter
 // ======================================
 
 function showMarketingServices() {
 
-    const marketing = services.filter(service =>
-
+    const marketingServices = services.filter(service =>
         service.category === "Marketing"
-
     );
 
-    displayServices(marketing);
+    displayServices(marketingServices);
 
 }
-
-// ======================================
-// Button Event (Optional)
-// ======================================
 
 const marketingButton = document.querySelector("#marketingBtn");
 
 if (marketingButton) {
 
     marketingButton.addEventListener("click", showMarketingServices);
+
+}
+
+// ======================================
+// Contact Form
+// ======================================
+
+const contactForm = document.querySelector("#contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", (event) => {
+
+        event.preventDefault();
+
+        const name = document.querySelector("#name").value;
+
+        localStorage.setItem("lastVisitor", name);
+
+        alert(`Thank you ${name}! We will contact you soon.`);
+
+        contactForm.reset();
+
+    });
+
+}
+
+// ======================================
+// Visit Counter (localStorage)
+// ======================================
+
+let visits = Number(localStorage.getItem("visits")) || 0;
+
+visits++;
+
+localStorage.setItem("visits", visits);
+
+const visitMessage = document.querySelector("#visit-message");
+
+if (visitMessage) {
+
+    if (visits === 1) {
+
+        visitMessage.textContent =
+            "Welcome! This is your first visit.";
+
+    } else {
+
+        visitMessage.textContent =
+            `Welcome back! You have visited this website ${visits} times.`;
+
+    }
 
 }
