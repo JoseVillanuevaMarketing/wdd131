@@ -54,7 +54,12 @@
     }
 
     .hero-image img {
-        width: 100%;
+
+    width:100%;
+    max-width:600px;
+    height:auto;
+
+    justify-self:center;
     }
 
     /* ---------- About ---------- */
@@ -79,7 +84,13 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
+    .card img {
 
+    height:250px;
+    width:100%;
+
+    object-fit:cover;
+    }
     .card {
         transition: transform .3s ease,
                     box-shadow .3s ease;
